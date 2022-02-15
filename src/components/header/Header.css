@@ -1,0 +1,37 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    padding: 10px 20px;
+}
+
+.header__flag {
+    width: 150px;
+}
+
+.header__flag > img {
+    width: 100%;
+}
+
+.header__accountActions {
+    display: flex;
+    flex-direction: column;
+}
+
+.header__button {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    border: none;
+    background-color: #FD8A43;
+    border-radius: 100px;
+    padding: 5px;
+    margin: 2px 0;
+}
+
+.header__button:hover {
+    background-color: #fdaf6e;
+}

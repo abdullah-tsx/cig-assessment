@@ -1,0 +1,8 @@
+.topBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #DADADA;
+    border-radius: 100px;
+    padding: 10px;
+}

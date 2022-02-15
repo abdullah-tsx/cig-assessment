@@ -1,0 +1,13 @@
+.categories__category {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 30px;
+
+}
+
+.categories__divider {
+    border-left: 3px solid white;
+    height: 100%;
+    margin: 0 10px;
+}

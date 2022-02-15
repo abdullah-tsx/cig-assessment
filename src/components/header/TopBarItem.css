@@ -1,0 +1,46 @@
+.searchBarItem {
+
+}
+
+.searchBarItem__dropdownButton {
+    color: black;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-weight: bold;
+    display: flex;
+    padding: 10px 0;
+    margin: 0 10px;
+}
+
+.searchBarItem__dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.searchBarItem__dropdownContent {
+    display: none;
+    position: absolute;
+    background-color: #DADADA;
+    width: 100%;
+    z-index: 1;
+}
+
+.searchBarItem__dropdownContent a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.searchBarItem__dropdownContent a:hover {
+    background-color: #f1f1f1
+}
+
+.searchBarItem__dropdown:hover .searchBarItem__dropdownContent {
+    display: block;
+}
+
+.searchBarItem__dropdown:hover .searchBarItem__dropdownButton {
+}
