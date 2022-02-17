@@ -1,23 +1,37 @@
-.product {
+.product__content {
     width: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    background-color: #DADADA;
 }
 
+
 .product__image {
-    max-width: 100%;
-    max-height: 100%;
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 80%;
+    margin: 5px 0;
+}
+
+.product__title {
+    margin: 5px 0;
+}
+
+.product__category {
+    margin: 5px;
 }
 
 .product__oldPrice {
     color: red;
     text-decoration: line-through 2px solid;
+    margin: 5px 0;
 }
 
 .product__savings {
     color: green;
+    margin: 5px 0;
 }
 
 .product__button {
@@ -32,6 +46,7 @@
     font-weight: bold;
     padding: 9px 2px;
     text-decoration: none;
+    margin: 5px 0;
 }
 
 .product__button:hover {
@@ -41,4 +56,8 @@
 .product__button:active {
     position: relative;
     top: 1px;
+}
+
+.product__rating {
+    margin: 5px 0;
 }

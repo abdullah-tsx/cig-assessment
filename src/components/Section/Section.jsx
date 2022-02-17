@@ -1,29 +1,34 @@
 import React from 'react';
+import ArrowForwardIosOutlinedIcon from '@mui/icons-material/ArrowForwardIosOutlined';
 import './Section.css';
-import {Card, CardContent} from "@mui/material";
 
-const Section = ({title, children, className}) => {
+const Section = ({title, children, className, viewMore}) => {
 
-    console.log(className);
     return (
-        <div className={`section__container ${className}`}>
-            <h1 className="section__title">{title}</h1>
-            <div className="section__body">
-                {children.length && children.map((child) => {
-                    return <Card>
-                        <CardContent className="section__content">
+        <>
+            <hr/>
+            <div className={`section__container ${className}`}>
+                <div className="section__header">
+                    <h1 className="section__title">{title}</h1>
+                    {viewMore && <div className="section__viewMore">
+                        <h2>View More</h2>
+                        <ArrowForwardIosOutlinedIcon className="section__viewMoreIcon"/>
+                    </div>}
+                </div>
+                <div className="section__body">
+                    {children.length && children.map((child) => {
+                        return <div className="section__content">
                             {child}
-                        </CardContent>
-                    </Card>
-                })}
-                {!children.length && <Card>
-                    <CardContent className="section__content">
-                        {children}
-                    </CardContent>
-                </Card>
-                }
+                        </div>
+                    })}
+                    {!children.length &&
+                        <div className="section__content">
+                            {children}
+                        </div>
+                    }
+                </div>
             </div>
-        </div>
+        </>
     );
 };
 

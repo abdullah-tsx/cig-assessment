@@ -1,5 +1,5 @@
 
-*, *::after, * h::before {
+*, *::after, *::before {
     margin: 0;
 }
 

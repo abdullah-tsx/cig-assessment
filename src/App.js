@@ -13,7 +13,6 @@ function App() {
             <Header/>
             <NavBar/>
             <Hero/>
-            <hr/>
             <Section title="Our Major Categories" className="app__section">
                 <img className="app__section__image"
                      src="https://assets-global.website-files.com/59b85cfc56db830001760b29/5fff14e2413f90bf4a61ee82_Asset_5.png"
@@ -31,12 +30,13 @@ function App() {
                      src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Former_Visa_%28company%29_logo.svg/3072px-Former_Visa_%28company%29_logo.svg.png"
                      alt="visa"/>
             </Section>
-            <hr/>
             <Section title="Best Selling Products" className="app__section">
                 <Product/>
                 <Product/>
                 <Product/>
                 <Product/>
+            </Section>
+            <Section title="Commonly Ask for" className="app__section" viewMore>
                 <Product/>
             </Section>
         </div>

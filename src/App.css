@@ -3,7 +3,7 @@ hr {
     height: 5px;
     background-color: black;
     border-radius: 50px;
-    margin: 0 10px;
+    margin: 10px 10px;
 }
 
 .app__section {
@@ -13,49 +13,4 @@ hr {
 .app__section__image {
     width: 200px;
     height: 100px;
-}
-
-.app__product {
-    width: 250px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-}
-
-.app__product__image {
-    max-width: 100%;
-    max-height: 100%;
-}
-
-.app__product__oldPrice {
-    color: red;
-    text-decoration: line-through 2px solid;
-}
-
-.app__product__savings {
-    color: green;
-}
-
-.app__product__button {
-    box-shadow: -1px 3px 1px 1px #3e7327;
-    background: #77b55a linear-gradient(to bottom, #77b55a 5%, #72b352 100%);
-    border-radius: 4px;
-    border: 1px solid #4b8f29;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: bold;
-    padding: 9px 2px;
-    text-decoration: none;
-}
-
-.app__product__button:hover {
-    background: #99d783 linear-gradient(to bottom, #72b352 5%, #77b55a 100%);
-}
-
-.app__product__button:active {
-    position: relative;
-    top: 1px;
 }
