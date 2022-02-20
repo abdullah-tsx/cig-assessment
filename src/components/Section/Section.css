@@ -32,6 +32,16 @@
     margin: 20px 0;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.viewMore {
+    position: absolute;
+    right: 7px;
+}
+
 .section__body {
     display: flex;
     justify-content: space-evenly;

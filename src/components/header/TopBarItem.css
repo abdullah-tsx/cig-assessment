@@ -4,7 +4,7 @@
 
 .searchBarItem__dropdownButton {
     color: black;
-    font-size: 30px;
+    font-size: 16px;
     border: none;
     cursor: pointer;
     background: none;
@@ -12,6 +12,7 @@
     display: flex;
     padding: 10px 0;
     margin: 0 10px;
+    align-items: center;
 }
 
 .searchBarItem__dropdown {

@@ -1,13 +1,21 @@
-import React from 'react';
+import React, {useState} from 'react';
 import SearchIcon from '@mui/icons-material/Search';
-import './SearchForm.css';
+import CancelIcon from '@mui/icons-material/Cancel';
+import './SearchForm.scss';
 
 const SearchForm = () => {
-    return (
-        <div className="search">
-            <SearchIcon className="search__icon" fontSize="large"/>
-        </div>
-    );
+
+  const [open, setOpen] = useState(false);
+
+  return (
+    open ? <><input type="text" className="inputForm"/> <CancelIcon onClick={() => {
+      setOpen(false)
+    }} className="cancel_icon"/></> : <div className="search">
+      <SearchIcon className="icon" fontSize="large" onClick={() => {
+        setOpen(true);
+      }}/>
+    </div>
+  );
 };
 
 export default SearchForm;
